@@ -479,3 +479,65 @@ header .image img {
         padding: 20px;
     }
 }
+/* Education and Experience Section */
+.experience-section {
+    padding: 80px 10%;
+    background-color: #f8f0fc;
+    text-align: center;
+}
+
+.experience-section h2 {
+    color: #4b246b;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.section-description {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.experience-table th,
+.experience-table td {
+    padding: 15px;
+    border: 1px solid #e2d4ed;
+    text-align: left;
+}
+
+.experience-table th {
+    background-color: #4b246b;
+    color: #ffffff;
+}
+
+.experience-table tbody tr:nth-child(even) {
+    background-color: #f3eafa;
+}
+
+.experience-table tbody tr:hover {
+    background-color: #eadcf5;
+}
+
+@media (max-width: 600px) {
+    .experience-section {
+        padding: 50px 5%;
+    }
+
+    .experience-table th,
+    .experience-table td {
+        padding: 10px;
+        font-size: 0.85rem;
+    }
+}
