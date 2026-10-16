@@ -13,7 +13,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;
+    scroll-padding-top: 60px;
 }
 
 body {
@@ -26,7 +26,7 @@ img {
     max-width: 100%;
 }
 
-/* ACTIVITY 6: NAVIGATION */
+/* NAVIGATION */
 nav {
     position: fixed;
     top: 0;
@@ -34,14 +34,11 @@ nav {
     width: 100%;
     min-height: 60px;
     padding: 10px 5%;
-
     background-color: #363062;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-
     z-index: 1000;
 }
 
@@ -84,7 +81,6 @@ nav .fa-solid {
     height: 2px;
     left: 0;
     bottom: 0;
-
     background-color: #E7BCDE;
     transition: width 0.3s ease;
 }
@@ -105,13 +101,10 @@ nav .fa-solid {
     min-height: 100vh;
     margin: auto;
     padding: 100px 8%;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 5rem;
-
-    scroll-margin-top: 80px;
 }
 
 header .content h4 {
@@ -151,16 +144,12 @@ header .content p {
     display: inline-block;
     margin-top: 5px;
     padding: 12px 25px;
-
     background-color: #363062;
     color: #fff;
     border-radius: 8px;
-
     font-size: 0.95rem;
     font-weight: 600;
-
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .learn-more:hover {
@@ -181,12 +170,10 @@ header .image::before {
     position: absolute;
     top: 50%;
     left: 50%;
-
     transform: translate(-50%, -50%);
     font-size: clamp(12rem, 35vw, 30rem);
     font-weight: 400;
     line-height: 1;
-
     color: #BB9CC0;
     opacity: 0.2;
     z-index: 0;
@@ -208,13 +195,10 @@ header .image img {
     min-height: 80vh;
     margin: auto;
     padding: 100px 8%;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
-
-    scroll-margin-top: 80px;
 }
 
 .about-content {
@@ -242,7 +226,6 @@ header .image img {
     width: 100%;
     max-width: 600px;
     height: auto;
-
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
@@ -252,8 +235,6 @@ header .image img {
     max-width: 1200px;
     margin: auto;
     padding: 100px 8%;
-
-    scroll-margin-top: 80px;
 }
 
 .skills-content {
@@ -280,13 +261,10 @@ header .image img {
 .skill-card {
     padding: 30px 20px;
     background-color: #fff;
-
     border: 1px solid #E7BCDE;
     border-radius: 12px;
-
     text-align: center;
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
@@ -310,13 +288,11 @@ header .image img {
     line-height: 1.6;
 }
 
-/* ACTIVITY 4: PROJECT SHOWCASE */
+/* PROJECTS */
 .projects-section {
     max-width: 1200px;
     margin: auto;
     padding: 100px 8%;
-
-    scroll-margin-top: 80px;
 }
 
 .projects-content {
@@ -347,16 +323,12 @@ header .image img {
     flex-direction: column;
     min-width: 0;
     overflow: hidden;
-
     background-color: #fff;
     border: 1px solid #E7BCDE;
     border-radius: 12px;
-
     text-align: left;
     box-shadow: 0 5px 15px rgba(54, 48, 98, 0.08);
-
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
@@ -406,16 +378,12 @@ header .image img {
     display: inline-block;
     margin-top: 5px;
     padding: 10px 18px;
-
     background-color: #363062;
     color: #fff;
     border-radius: 8px;
-
     font-size: 0.9rem;
     font-weight: 600;
-
-    transition: background-color 0.3s ease,
-                transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project-button:hover {
@@ -427,13 +395,11 @@ header .image img {
     margin-right: 6px;
 }
 
-/* ACTIVITY 5: EDUCATION AND EXPERIENCE */
+/* EDUCATION AND EXPERIENCE */
 .experience-section {
     padding: 80px 10%;
     background-color: #F8F0FC;
     text-align: center;
-
-    scroll-margin-top: 80px;
 }
 
 .experience-section h2 {
@@ -479,24 +445,101 @@ header .image img {
     background-color: #EADCF5;
 }
 
-/* CONTACT SECTION */
+/* CONTACT FORM */
 .contact-section {
     padding: 80px 10%;
     background-color: #F6F1EE;
-    text-align: center;
-
-    scroll-margin-top: 80px;
 }
 
-.contact-section h2 {
+.contact-content {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-content h2 {
     margin-bottom: 15px;
     color: #BB9CC0;
     font-size: 2.5rem;
 }
 
-.contact-section p {
+.contact-intro {
+    margin-bottom: 35px;
     color: #4F4A45;
     line-height: 1.7;
+}
+
+.contact-form {
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #E7BCDE;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(54, 48, 98, 0.08);
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #363062;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #D8C9DF;
+    border-radius: 8px;
+    background-color: #FDFBFE;
+    color: #4F4A45;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #363062;
+    box-shadow: 0 0 0 3px rgba(187, 156, 192, 0.25);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #363062;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #BB9CC0;
+    transform: translateY(-2px);
+}
+
+.contact-button:focus-visible {
+    outline: 2px solid #363062;
+    outline-offset: 3px;
+}
+
+.contact-button i {
+    margin-right: 6px;
 }
 
 /* FOOTER */
@@ -599,7 +642,7 @@ header .image img {
     .about-content h2,
     .skills-content h2,
     .projects-content h2,
-    .contact-section h2 {
+    .contact-content h2 {
         font-size: 2rem;
     }
 
@@ -634,6 +677,14 @@ header .image img {
     .experience-table td {
         padding: 10px;
         font-size: 0.85rem;
+    }
+
+    .contact-form {
+        padding: 22px 18px;
+    }
+
+    .contact-button {
+        width: 100%;
     }
 }
 
